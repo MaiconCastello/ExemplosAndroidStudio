@@ -14,7 +14,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="50dp"
         android:fontFamily="sans-serif"
-        android:text="Bem vindo ao Maik's App"
+        android:text="@string/bem_vindo_ao_maik_s_app"
         android:textAlignment="textStart"
         android:textColor="#FFFFFF"
         android:textSize="34sp"
@@ -31,13 +31,15 @@
         android:layout_marginEnd="32dp"
         android:backgroundTint="#000000"
         android:ems="10"
-        android:hint="Usuário"
+        android:hint="@string/usu_rio"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:textColor="#FFFFFF"
+        android:textColorHint="#F5F5F5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
@@ -48,12 +50,14 @@
         android:layout_marginEnd="32dp"
         android:backgroundTint="#000000"
         android:ems="10"
-        android:hint="Senha"
+        android:hint="@string/senha"
         android:inputType="textPassword"
         android:minHeight="48dp"
+        android:textColorHint="#F5F5F5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/button"
@@ -61,7 +65,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:backgroundTint="#D176E1"
-        android:text="Login"
+        android:text="@string/login"
+        android:textColor="#263238"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
@@ -72,9 +77,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:backgroundTint="#D176E1"
-        android:text="SIGN IN"
+        android:text="@string/sign_in"
+        android:textColor="#263238"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -22,7 +22,10 @@
         android:id="@+id/textView"
         android:layout_width="411dp"
         android:layout_height="65dp"
-        android:background="#FFFFFF" />
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"

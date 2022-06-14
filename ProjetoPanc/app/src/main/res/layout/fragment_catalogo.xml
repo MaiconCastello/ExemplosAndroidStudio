@@ -5,7 +5,8 @@
     android:id="@+id/frameLayout3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".catalogo">
+    tools:context=".catalogo"
+    android:background="#F0E4D1">
 
     <TextView
         android:id="@+id/textView3"

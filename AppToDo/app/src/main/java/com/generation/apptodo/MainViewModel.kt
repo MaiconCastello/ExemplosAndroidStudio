@@ -7,6 +7,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.generation.apptodo.api.Repository
 import com.generation.apptodo.model.Categoria
+import com.generation.apptodo.model.Tarefa
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import retrofit2.Response
@@ -25,23 +26,52 @@ class MainViewModel @Inject constructor(
     val myCategoriaResponse: LiveData<Response<List<Categoria>>> =
         _myCategoriaResponse
 
+    private val _myTarefaResponse =
+        MutableLiveData<Response<List<Tarefa>>>()
+
+    val myTarefaResponse: LiveData<Response<List<Tarefa>>> =
+        _myTarefaResponse
+
     val dataSelecionada = MutableLiveData<LocalDate>()
 
     init {
         //listCategoria()
     }
 
-    fun listCategoria(){
+    fun listCategoria() {
         viewModelScope.launch {
             try {
 
                 val response = repository.listCategoria()
-                    _myCategoriaResponse.value = response
+                _myCategoriaResponse.value = response
 
-            }catch (e: Exception){
+            } catch (e: Exception) {
                 Log.d("Erro", e.message.toString())
             }
         }
     }
 
+    fun addTarefa(tarefa: Tarefa) {
+        viewModelScope.launch {
+            try {
+                repository.addTarefa(tarefa)
+
+            } catch (e: Exception) {
+                Log.d("Erro", e.message.toString())
+            }
+        }
+    }
+
+    fun listTarefa() {
+        viewModelScope.launch {
+            try {
+                val response = repository.listTarefa()
+                _myTarefaResponse.value = response
+            } catch (e: Exception) {
+                Log.d("Erro", e.message.toString())
+
+            }
+        }
+
+    }
 }

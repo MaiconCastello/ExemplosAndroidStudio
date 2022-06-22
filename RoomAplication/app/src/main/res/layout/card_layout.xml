@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        tools:text="1"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="21dp" />
+
+    <TextView
+        android:id="@+id/textNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        tools:text="Maicon"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="21dp" />
+
+    <TextView
+        android:id="@+id/textSobrenome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        tools:text="Anjos"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="21dp" />
+
+    <TextView
+        android:id="@+id/textIdade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        tools:text="24"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="21dp" />
+</androidx.appcompat.widget.LinearLayoutCompat>

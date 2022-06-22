@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".addFragment">
 
-    <!-- TODO: Update blank fragment layout -->
 
     <EditText
         android:id="@+id/editNome"
@@ -41,7 +40,7 @@
         android:hint="Sobrenome" />
 
     <EditText
-        android:id="@+id/editIdade"
+        android:id="@+id/editidade"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="32dp"
@@ -62,22 +61,8 @@
         android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editIdade"
+        app:layout_constraintTop_toBottomOf="@+id/editidade"
         android:text="ADD" />
 
-    <EditText
-        android:id="@+id/editTeste"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
-        android:ems="10"
-        android:hint="Teste"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
